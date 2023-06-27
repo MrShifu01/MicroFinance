@@ -3,6 +3,8 @@ const express = require('express')
 const connectDB = require('./config/db')
 require('dotenv').config()
 const clientRoutes =require('./routes/clientRoutes.js')
+const userRoutes =require('./routes/userRoutes.js')
+const loanRoutes =require('./routes/loanRoutes.js')
 const cors = require('cors')
 const bcrypt = require('bcryptjs')
 const cookieParser = require('cookie-parser')
@@ -24,6 +26,8 @@ app.use(cookieParser())
 
 // Routes
 app.use('/clients', clientRoutes)
+app.use('/loans', loanRoutes)
+app.use('/users', userRoutes)
 
 // Test Route
 app.get('/', (req, res) => {
