@@ -18,7 +18,7 @@ const ClientSchema = new mongoose.Schema({
         req: true
     },
     salaryDate: {
-        type: Date, 
+        type: String, 
         req: true
     },
     phone: {
@@ -37,7 +37,7 @@ const ClientSchema = new mongoose.Schema({
     loans: {type:mongoose.Schema.Types.ObjectId, ref:'Loan'},
     industry: String,
 
-    notes: [String],
+    notes: String,
 
 }, {timestamps:true})
 

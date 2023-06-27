@@ -14,11 +14,11 @@ connectDB()
 const importData = async () => {
     try {
 
-        await Client.deleteMany()
-        await Client.insertMany(clients)
+        // await Client.deleteMany()
+        // await Client.insertMany(clients)
 
-        await User.deleteMany()
-        await User.insertMany(users)
+        // await User.deleteMany()
+        // await User.insertMany(users)
 
         await Loan.deleteMany()
         await Loan.insertMany(loans)

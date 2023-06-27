@@ -9,6 +9,8 @@ const cors = require('cors')
 const bcrypt = require('bcryptjs')
 const cookieParser = require('cookie-parser')
 
+
+
 // Configurations
 const PORT = process.env.PORT || 8000 
 connectDB()
