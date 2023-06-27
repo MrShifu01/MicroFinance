@@ -7,9 +7,9 @@ const clients = [
       salaryDate: new Date("2023-06-30"),
       phone: "9876543210",
       badLender: false,
-      Office: "ABC Company",
-      Address: "123 Main Street",
-      Industry: "Technology",
+      office: "ABC Company",
+      address: "123 Main Street",
+      industry: "Technology",
       notes: ["Regular customer"]
     },
     {
@@ -20,9 +20,9 @@ const clients = [
       salaryDate: new Date("2023-07-05"),
       phone: "1234567890",
       badLender: true,
-      Office: "XYZ Corporation",
-      Address: "456 Elm Street",
-      Industry: "Finance",
+      office: "XYZ Corporation",
+      address: "456 Elm Street",
+      industry: "Finance",
       notes: ["Late payments"]
     },
     {
@@ -33,9 +33,9 @@ const clients = [
       salaryDate: new Date("2023-06-28"),
       phone: "7894561230",
       badLender: false,
-      Office: "PQR Ltd.",
-      Address: "789 Oak Avenue",
-      Industry: "Manufacturing",
+      office: "PQR Ltd.",
+      address: "789 Oak Avenue",
+      industry: "Manufacturing",
       notes: ["High credit score"]
     },
     {
@@ -46,9 +46,9 @@ const clients = [
       salaryDate: new Date("2023-07-02"),
       phone: "3692581470",
       badLender: false,
-      Office: "LMN Inc.",
-      Address: "159 Pine Street",
-      Industry: "Retail",
+      office: "LMN Inc.",
+      address: "159 Pine Street",
+      industry: "Retail",
       notes: []
     },
     {
@@ -59,9 +59,9 @@ const clients = [
       salaryDate: new Date("2023-06-29"),
       phone: "7412589630",
       badLender: true,
-      Office: "RST Company",
-      Address: "753 Cedar Lane",
-      Industry: "Hospitality",
+      office: "RST Company",
+      address: "753 Cedar Lane",
+      industry: "Hospitality",
       notes: ["Requires special attention"]
     }
   ];

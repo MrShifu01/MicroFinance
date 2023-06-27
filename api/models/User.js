@@ -3,9 +3,10 @@ const mongoose = require('mongoose')
 const UserSchema = new mongoose.Schema({
     name: String,
     email: String,
-    password: String
+    password: String,
+    isAdmin: Boolean
 })
 
-const UserModel = mognoose.model("User", UserSchema)
+const UserModel = mongoose.model("User", UserSchema)
 
 module.exports = UserModel

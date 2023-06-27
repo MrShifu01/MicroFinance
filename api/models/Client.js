@@ -26,17 +26,20 @@ const ClientSchema = new mongoose.Schema({
         req: true
     },
     badLender: Boolean,
-    Office: {
+    office: {
         type: String, 
         req: true
     },
-    Address: {
+    address: {
         type: String, 
         req: true
     },
-    Industry: String,
+    loans: {type:mongoose.Schema.Types.ObjectId, ref:'Loan'},
+    industry: String,
+
     notes: [String],
-})
+
+}, {timestamps:true})
 
 const ClientModel = mongoose.model("Client", ClientSchema)
 

@@ -20,11 +20,12 @@ app.use(cors({
 }))
 app.use(express.json())
 app.use(express.urlencoded({extended: true}))
-app.use(cookieParser)
+app.use(cookieParser())
 
 // Routes
 app.use('/clients', clientRoutes)
 
+// Test Route
 app.get('/', (req, res) => {
     res.json("API is working!")
 })
