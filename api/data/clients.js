@@ -10,7 +10,7 @@ const clients = [
       office: "ABC Company",
       address: "123 Main Street",
       industry: "Technology",
-      notes: ["Regular customer"]
+      notes: "Regular customer"
     },
     {
       name: "Jane Smith",
@@ -23,7 +23,7 @@ const clients = [
       office: "XYZ Corporation",
       address: "456 Elm Street",
       industry: "Finance",
-      notes: ["Late payments"]
+      notes: "Late payments"
     },
     {
       name: "Michael Johnson",
@@ -36,7 +36,7 @@ const clients = [
       office: "PQR Ltd.",
       address: "789 Oak Avenue",
       industry: "Manufacturing",
-      notes: ["High credit score"]
+      notes: "High credit score"
     },
     {
       name: "Emily Davis",
@@ -49,7 +49,7 @@ const clients = [
       office: "LMN Inc.",
       address: "159 Pine Street",
       industry: "Retail",
-      notes: []
+      notes: ''
     },
     {
       name: "David Wilson",
@@ -62,7 +62,7 @@ const clients = [
       office: "RST Company",
       address: "753 Cedar Lane",
       industry: "Hospitality",
-      notes: ["Requires special attention"]
+      notes: "Requires special attention"
     }
   ];
 

@@ -30,5 +30,6 @@ const createClient = async (clientInfo, req, res) => {
 
 module.exports = {
     getClients,
-    createClient
+    createClient,
+    editClient
 }

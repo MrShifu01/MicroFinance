@@ -5,7 +5,7 @@ const colors = require('colors')
 const Client = require('./models/Client.js')
 const clients = require('./data/clients.js')
 const User = require('./models/User.js')
-const users = require('./data/clients.js')
+const users = require('./data/users.js')
 const Loan = require('./models/Loan.js')
 const loans = require('./data/loans.js')
 
@@ -14,11 +14,11 @@ connectDB()
 const importData = async () => {
     try {
 
-        // await Client.deleteMany()
-        // await Client.insertMany(clients)
+        await Client.deleteMany()
+        await Client.insertMany(clients)
 
-        // await User.deleteMany()
-        // await User.insertMany(users)
+        await User.deleteMany()
+        await User.insertMany(users)
 
         await Loan.deleteMany()
         await Loan.insertMany(loans)

@@ -15,7 +15,7 @@ const cookieParser = require('cookie-parser')
 const PORT = process.env.PORT || 8000 
 connectDB()
 const app = express()
-const salt = bcrypt.genSaltSync(10)
+
 
 // Middleware
 app.use(cors({

@@ -1,6 +1,6 @@
 const express = require('express') 
 const router = express.Router()
-const {getClients, editClient} = require('../controllers/clientController.js')
+const {getClients, editClient, createClient} = require('../controllers/clientController.js')
 
 router.get('/', getClients)
 router.put('/', (req, res) => {

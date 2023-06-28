@@ -19,5 +19,5 @@ const users = [
     }
 ];
 
-modeule.exports = users
+module.exports = users
   
