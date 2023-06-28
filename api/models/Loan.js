@@ -6,7 +6,7 @@ const LoanSchema = new mongoose.Schema ({
     repaymentDate: Date, // Auto fill on form for salary date
     loanAmount: Number,
     repaymentAmount: Number,
-    settled: Boolean,
+    settled: {type: Boolean, default: false},
     notes: String,
 }, {timestamps:true})
 
