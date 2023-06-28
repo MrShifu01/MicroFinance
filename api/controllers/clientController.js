@@ -18,9 +18,17 @@ const editClient = async (clientInfo, req, res) => {
     );
     res.status(200).json(updatedClient);
   };
+
+// Function create a clients
+// Route    POST /clients
+// Access   Admin
+const createClient = async (clientInfo, req, res) => {
+    const newClient = await Client.create(clientInfo)
+    res.status(200).json(newClient);
+  };
   
 
 module.exports = {
     getClients,
-    editClient
+    createClient
 }

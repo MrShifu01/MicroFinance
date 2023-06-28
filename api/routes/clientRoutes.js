@@ -38,5 +38,38 @@ router.put('/', (req, res) => {
 
     editClient(userInfo, req, res)
 })
+router.post('/', (req, res) => {
+    const { 
+        name, 
+        idNumber, 
+        address, 
+        notes, 
+        settled, 
+        bank, 
+        accNumber, 
+        salaryDate, 
+        phone, 
+        badLender, 
+        office,
+        industry
+    } = req.body
+
+    const userInfo = {
+        name, 
+        idNumber, 
+        address, 
+        notes, 
+        settled, 
+        bank, 
+        accNumber, 
+        salaryDate, 
+        phone, 
+        badLender, 
+        office,
+        industry
+    }
+
+    createClient(userInfo, req, res)
+})
 
 module.exports = router

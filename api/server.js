@@ -8,7 +8,7 @@ const loanRoutes =require('./routes/loanRoutes.js')
 const cors = require('cors')
 const bcrypt = require('bcryptjs')
 const cookieParser = require('cookie-parser')
-
+// NEED TO ADD THE CSV PARSER OR MAYBE ON THE FRONTEND
 
 
 // Configurations
